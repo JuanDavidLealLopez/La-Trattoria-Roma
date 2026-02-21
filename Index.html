@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Css/stylesIndex.css">
-    <link rel="stylesheet" href="/Css/stylesNav.css">
+    <link rel="stylesheet" href="/Css/stylesIndex.css"><!--  Pagina principal -->
+    <link rel="stylesheet" href="/Css/stylesNav.css"><!-- Barra de navegacion -->
+    <link rel="stylesheet" href="/Css/stylesHero.css"><!-- Carrusel -->
     <title>inicio</title>
 </head>
+
 <body>
+    <!-- barra de navegavion-->
     <header class="HeaderNav"> 
          <div class="container">
 
@@ -24,8 +27,45 @@
         </nav>  
            
         <a href="#" class="btn-reserva">Reservar</a>
-        
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+  <img src="/Assets/svgIcons/bars-solid-full.svg" alt="Menú">
+       </button>
+
         </div> 
     </header>
+    <main>
+
+
+      <!-- carrousel-->       
+<section class="hero">
+
+  <div class="slide active">
+    <img src="Assets/hero_carrousel/pasta.jpg" alt="Pasta italiana">
+    <div class="overlay">
+      <h1>Auténtica Cocina Italiana</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="Assets/hero_carrousel/pizza.jpg" alt="Pizza artesanal">
+    <div class="overlay">
+      <h1>Sabores Tradicionales</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="Assets/hero_carrousel/tiramisu.jpg" alt="Postres italianos">
+    <div class="overlay">
+      <h1>Momentos Inolvidables</h1>
+    </div>
+  </div>
+</section>
+    </main>
+<script src="/Js/menuDespOscu.js"></script>
+<script src="/Js/menuDespl.js"></script>
+<script src="/Js/carrousel.js"></script>
 </body>
+
+
 </html>
