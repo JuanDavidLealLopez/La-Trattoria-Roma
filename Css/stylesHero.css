@@ -1,9 +1,25 @@
+
 .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
+/* Overlay oscuro con degradado */
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.099),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.9)
+  );
 
+  z-index: 1;
+  pointer-events: none;
+}
 .slide {
   position: absolute;
   width: 100%;
@@ -17,19 +33,27 @@
   height: 100%;
   object-fit: cover;
 }
-
 .slide.active {
   opacity: 1;
 }
 
 .overlay {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  background: rgba(0,0,0,0.4);
-  padding: 20px 40px;
   border-radius: 8px;
+  z-index: 2;
+}
+.overlay h1{
+  font-size: 55px;
+  font-family: playfair display, serif;
+  
+}
+.overlay p{
+  font-size: 23px;
+  font-family: playfair display, serif;
 }

@@ -13,4 +13,4 @@ function changeSlide() {
 }
 
 // Cambia cada 4 segundos
-setInterval(changeSlide, 4000);
+setInterval(changeSlide, 7000);
