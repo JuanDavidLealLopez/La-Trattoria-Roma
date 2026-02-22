@@ -4,4 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Descipcion Negocio*/
+.TrattoriaRoma{
+  overflow: hidden;
+  padding: 0 100px ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;     
+  width: 100%;
+  height: 300px;
+  background-color:#eee ;
+}
+.TrattoriaRoma p{
+  max-width: 600px;       /* Limita ancho del párrafo */
+  margin: 0 auto;         /* Lo centra sin estirarlo */
+  text-align: center;     /* Opcional: centra texto */
+  font-size: 20px;
+  font-family: playfair display, serif;
+}

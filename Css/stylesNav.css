@@ -7,9 +7,15 @@
 
 /* Header */
 .HeaderNav {
-  background: #111;
+  width: 100%;
+  background: linear-gradient(to bottom,
+      #111111 0%,
+      rgba(17, 17, 17, 0.4) 80%,
+      rgba(17, 17, 17, 0) 100%);
   padding: 20px 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -31,7 +37,8 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 70px;
+  padding: 20px;
 }
 
 .nav-links a {
