@@ -17,9 +17,68 @@
   background-color:#eee ;
 }
 .TrattoriaRoma p{
-  max-width: 600px;       /* Limita ancho del párrafo */
-  margin: 0 auto;         /* Lo centra sin estirarlo */
-  text-align: center;     /* Opcional: centra texto */
+  max-width: 600px;       
+  margin: 0 auto;         
+  text-align: center;     
   font-size: 20px;
   font-family: playfair display, serif;
+}
+/*CONTENIDO DE HOME*/
+.sobreProduct{
+  padding: 200px 0px;
+}
+.contenido{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+}
+.contenido_txt{
+width: 600px;
+font-size: 15px;
+padding: 50px;
+}
+.contenido_txt h1{
+ color: #e63946;
+ font-size: 70px;
+ font-family: "edwardian script ITC", cursive;
+}
+.contenido_txt p{
+  font-family: playfair display,serif;
+}
+.contenido_img{
+width: 600px;
+height: 700px;
+object-fit: cover;
+}
+.contenido_alter_txt{
+width: 600px;
+padding: 50px;
+}
+.contenido_alter_txt h1{
+  color: #e63946;
+ font-size: 70px;
+ font-family: "edwardian script ITC", cursive;
+}
+.contenido_alter_txt p{
+  font-family: playfair display,serif;
+  font-size: 15px;
+}
+.contenido_alter_img{
+width: 600px;
+height: 700px;
+object-fit: cover;
+}
+
+/*alter*/
+.contenido_alter{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row-reverse;
 }
