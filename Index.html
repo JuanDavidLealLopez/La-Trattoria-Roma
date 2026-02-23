@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/Css/stylesIndex.css"><!--  Pagina principal -->
     <link rel="stylesheet" href="/Css/stylesNav.css"><!-- Barra de navegacion -->
     <link rel="stylesheet" href="/Css/stylesHero.css"><!-- Carrusel -->
-
+    <link rel="stylesheet" href="/Css/scrollAnim.css"><!--animacion scroll-->
 
 
  <!--fuentes Parisienne-->
@@ -54,8 +54,8 @@
   <div class="slide active">
     <img src="Assets/hero_carrousel/pasta.jpg" alt="Pasta italiana">
     <div class="overlay">
-      <h1>Pasta Italiana Tradicional</h1>
-      <p>Recetas auténticas, salsas caseras y el verdadero sabor de Italia en cada plato.</p>
+      <h1 class="reveal">Pasta Italiana Tradicional</h1>
+      <p class="reveal">Recetas auténticas, salsas caseras y el verdadero sabor de Italia en cada plato.</p>
       <button class="btn-conoce">Conoce Más</button>
     </div>
   </div>
@@ -63,8 +63,8 @@
   <div class="slide">
     <img src="Assets/hero_carrousel/pizza.jpg" alt="Pizza artesanal">
     <div class="overlay">
-      <h1>Pizza Artesanal al Horno de Piedra</h1>
-      <p>Masa fresca, ingredientes seleccionados y el auténtico sabor italiano en cada porción.</p>
+      <h1 class="reveal">Pizza Artesanal al Horno de Piedra</h1>
+      <p class="reveal">Masa fresca, ingredientes seleccionados y el auténtico sabor italiano en cada porción.</p>
       <button class="btn-conoce">Conoce Más</button>
     </div>
   </div>
@@ -72,8 +72,8 @@
   <div class="slide">
     <img src="Assets/hero_carrousel/tiramisu.jpg" alt="Postres italianos">
     <div class="overlay">
-      <h1>Postres Italianos Artesanales</h1>
-      <p>Dulces tradicionales elaborados con recetas auténticas para cerrar tu experiencia con el verdadero sabor de Italia.</p>
+      <h1 class="reveal">Postres Italianos Artesanales</h1>
+      <p class="reveal">Dulces tradicionales elaborados con recetas auténticas para cerrar tu experiencia con el verdadero sabor de Italia.</p>
       <button class="btn-conoce">Conoce Más</button>
     </div>
   </div>
@@ -82,7 +82,7 @@
 <!--Descripcion negocio--> 
 <section>
 <div class="TrattoriaRoma">
-<p>TrattoriaRoma es un restaurante italiano que ofrece una experiencia gastronómica auténtica, inspirada en la tradición culinaria mediterránea. Con un ambiente acogedor y recetas clásicas, su propuesta se centra en la calidad de ingredientes y la pasión por la cocina italiana, brindando platos que combinan sabor y tradición para momentos especiales.</p>
+<p class="reveal">TrattoriaRoma es un restaurante italiano que ofrece una experiencia gastronómica auténtica, inspirada en la tradición culinaria mediterránea. Con un ambiente acogedor y recetas clásicas, su propuesta se centra en la calidad de ingredientes y la pasión por la cocina italiana, brindando platos que combinan sabor y tradición para momentos especiales.</p>
 </div>
 </section>
 
@@ -92,27 +92,44 @@
   <div class="contenido">
 
     <div class="contenido_txt">
-      <h1>Postres – Tiramisu y dulces italianos</h1>
-      <p>En La Trattoria Roma celebramos la tradición italiana también en los postres. El tiramisú, con su equilibrio perfecto entre café, mascarpone y cacao, es uno de nuestros clásicos más apreciados. Cada porción se prepara siguiendo recetas que respetan la autenticidad del sabor italiano, ofreciendo una experiencia dulce y elegante que cierra la comida con un toque especial.</p>
+      <h1 class="reveal">Postres – Tiramisu y dulces italianos</h1>
+      <p class="reveal">En La Trattoria Roma celebramos la tradición italiana también en los postres. El tiramisú, con su equilibrio perfecto entre café, mascarpone y cacao, es uno de nuestros clásicos más apreciados. Cada porción se prepara siguiendo recetas que respetan la autenticidad del sabor italiano, ofreciendo una experiencia dulce y elegante que cierra la comida con un toque especial.</p>
     </div>
-    <img class="contenido_img" src="/Assets/img/img_home/roma1.jpg" alt="">
+    <img class="contenido_img reveal" src="/Assets/img/img_home/roma1.jpg" alt="">
 
  </div>
  <div class="contenido_alter">
     <div class="contenido_alter_txt">
-      <h1>Pizza de la casa</h1>
-      <p>Nuestra pizza de la casa refleja la esencia de la cocina italiana: masa artesanal, ingredientes frescos y combinaciones que resaltan el sabor tradicional. Desde opciones clásicas hasta creaciones propias, cada pizza se hornea para lograr una textura perfecta y un equilibrio de sabores que convierte cada bocado en una experiencia auténtica. Ideal para compartir o disfrutar en cualquier ocasión.</p>
+      <h1 class="reveal">Pizza de la casa</h1>
+      <p class="reveal">Nuestra pizza de la casa refleja la esencia de la cocina italiana: masa artesanal, ingredientes frescos y combinaciones que resaltan el sabor tradicional. Desde opciones clásicas hasta creaciones propias, cada pizza se hornea para lograr una textura perfecta y un equilibrio de sabores que convierte cada bocado en una experiencia auténtica. Ideal para compartir o disfrutar en cualquier ocasión.</p>
     </div>
-    <img class="contenido_alter_img" src="/Assets/img/img_home/roma2.jpg" alt="">
+    <img class="contenido_alter_img reveal" src="/Assets/img/img_home/roma2.jpg" alt="">
 </div>
 
   </div>
+  </div>
+</section>
+
+<!--contenido sub--> 
+<section>
+  <div class="info">
+    <div class="contenedor-miembros-img">
+     <img class="miembros-img" src="/Assets/img/img_Gran Riserva/Gran Riserva.jpg" alt="">
+    </div>
+    <div class="miembros-txt">
+      <h1 class="reveal">Gran Riserva</h1>
+      <p class="reveal">Gran Riserva es la membresía exclusiva de TrattoriaRoma diseñada para quienes buscan una experiencia gastronómica superior. Los miembros disfrutan de beneficios especiales como acceso anticipado a nuevos platos, eventos privados, atención preferencial y promociones exclusivas. Una propuesta pensada para quienes desean vivir la tradición italiana con un toque de distinción y privilegio.</p>
+      <button class="btn-riserva reveal">
+        <p>Quiero Ser Miembro</p>
+      </button>
+    </div>
   </div>
 </section>
     </main>
 <script src="/Js/menuDespOscu.js"></script>
 <script src="/Js/menuDespl.js"></script>
 <script src="/Js/carrousel.js"></script>
+<script src="/Js/scroll.js"></script>
 </body>
 
 

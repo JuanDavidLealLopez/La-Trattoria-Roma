@@ -82,3 +82,79 @@ object-fit: cover;
   align-items: center; 
   flex-direction: row-reverse;
 }
+/*Contenido sub*/
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #121212;
+  width: 100%;
+  height: 600px;
+}
+
+/*Contenedor img*/
+.contenedor-miembros-img{
+  width: 50%;
+  height: 100%;
+  
+}
+.miembros-img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+   /*Contenido txt*/
+.miembros-txt{
+  width: 50%;
+  color: white;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  padding: 20px;
+}
+.miembros-txt h1{
+  font-family: "edwardian script ITC", cursive;
+  font-size: 90px;
+  color: #e63946;
+}
+.miembros-txt p{
+  font-family: playfair display, serif;
+  font-size: 17px;
+}
+ /*Contenido btn*/
+.btn-riserva{
+  padding: 5px 0px;
+  color: white;
+  background-color: #e6394700;
+  width: 250px;
+  height: 40px;
+  border: 2px solid;
+  border-color: #e63946;
+  transition: all 0.7s ease;
+}
+.btn-riserva p{
+  font-family: playfair display, serif;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+.btn-riserva:hover{
+  background-color: #e63946;
+  color: white;
+ 
+}
+/*Responsive*/
+@media (max-width: 768px) {
+  .info{
+    height: 800px;
+  }
+  .miembros-txt h1{
+  font-size: 70px;
+}
+  .miembros-txt p{
+ font-size: 13px;
+}
+}
+  
+
