@@ -205,7 +205,7 @@ object-fit: cover;
 /*ubicacion*/
 .ubicacion{
   display: flex;
-  height: 850px;
+  min-height: 850px;
   width: 100%;
   background-color: #121212;
 }
@@ -278,6 +278,35 @@ footer{
   .miembros-txt p{
  font-size: 13px;
 }
+  .contenido,
+  .contenido_alter,
+  .info,
+  .ubicacion{
+    flex-direction: column;
+  }
+
+  .contenido_img,
+  .contenido_alter_img{
+    height: auto;
+  }
+
+  .miembros-txt,
+  .contenedor-miembros-img,
+  .ubicacion_mapa,
+  .ubicacion_info{
+    width: 100%;
+  }
+
+  .contenido_txt h1,
+  .contenido_alter_txt h1,
+  .miembros-txt h1,
+  .ubicacion_info h1{
+    font-size: 45px;
+  }
+
+  .ubicacion{
+    min-height: auto;
+  }
 }
   
 
