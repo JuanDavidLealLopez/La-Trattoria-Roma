@@ -25,9 +25,12 @@
 }
 /*CONTENIDO DE HOME*/
 .sobreProduct{
-  padding: 200px 0px;
+  padding: 50px 0px;
+  width: 100%;
+  height: auto ;
 }
 .contenido{
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -35,52 +38,44 @@
   justify-content: center;
   align-items: center; 
 }
-.contenido_txt{
-width: 600px;
-font-size: 15px;
-padding: 50px;
+.contenido{
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
-.contenido_txt h1{
- color: #e63946;
- font-size: 70px;
- font-family: "edwardian script ITC", cursive;
-}
-.contenido_txt p{
-  font-family: playfair display,serif;
-}
-.contenido_img{
-width: 600px;
-height: 700px;
-object-fit: cover;
-}
-.contenido_alter_txt{
-width: 600px;
-padding: 50px;
-}
-.contenido_alter_txt h1{
-  color: #e63946;
- font-size: 70px;
- font-family: "edwardian script ITC", cursive;
-}
-.contenido_alter_txt p{
-  font-family: playfair display,serif;
-  font-size: 15px;
-}
-.contenido_alter_img{
-width: 600px;
-height: 700px;
-object-fit: cover;
-}
-
-/*alter*/
 .contenido_alter{
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  text-align: center;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  gap: 40px;
   flex-direction: row-reverse;
+}
+
+.contenido_txt,
+.contenido_alter_txt{
+  justify-content: center;
+  text-align: center;
+  flex: 1 1 500px;   
+  max-width: 600px;
+  padding: 50px;
+  font-family: playfair display, serif;
+}
+.contenido_txt h1,
+.contenido_alter_txt h1{
+  font-family: "edwardian script ITC", cursive;
+  color: #e63946;
+}
+
+.contenido_img,
+.contenido_alter_img{
+  flex: 1 1 500px;
+  max-width: 600px;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
 }
 /*Contenido sub*/
 .info{
@@ -240,6 +235,11 @@ object-fit: cover;
   height: auto;
   background-color: #eee;
 }
+.logo-footer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 /*Footer*/
 footer{
   width: 100%;
@@ -269,6 +269,13 @@ footer{
 }
 /*Responsive*/
 @media (max-width: 720px) {
+  .logo{
+    font-size: 200px;
+  }
+  .TrattoriaRoma p{
+    font-size: 15px;
+   
+  }
   .info{
     height: 800px;
   }
@@ -278,16 +285,10 @@ footer{
   .miembros-txt p{
  font-size: 13px;
 }
-  .contenido,
-  .contenido_alter,
   .info,
   .ubicacion{
     flex-direction: column;
-  }
-
-  .contenido_img,
-  .contenido_alter_img{
-    height: auto;
+   
   }
 
   .miembros-txt,
@@ -295,10 +296,12 @@ footer{
   .ubicacion_mapa,
   .ubicacion_info{
     width: 100%;
+    height: 800px;
+  }
+  .miembros-txt{
+    padding-top: 70px;
   }
 
-  .contenido_txt h1,
-  .contenido_alter_txt h1,
   .miembros-txt h1,
   .ubicacion_info h1{
     font-size: 45px;
@@ -307,6 +310,29 @@ footer{
   .ubicacion{
     min-height: auto;
   }
+  .ubicacion_info p{
+    font-size: 15px;
+  }
+  /*header*/
+  header{
+    width: 100%;
+  }
+
+  .contenido,
+  .contenido_alter{
+    flex-direction: column;
+  }
+
+  .contenido_img,
+  .contenido_alter_img{
+    height: auto;
+  }
+
+  .contenido_txt h1,
+  .contenido_alter_txt h1{
+    font-size: 42px;
+  }
+
 }
   
 

@@ -85,6 +85,9 @@ body.menu-open {
 }
 /* RESPONSIVE */
 @media (max-width: 720px) {
+  .logo{
+    font-size: 30px;
+  }
 
   .nav-links {
     position: fixed; /* 👈 importante */
