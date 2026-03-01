@@ -84,7 +84,7 @@ body.menu-open {
   overflow: hidden;
 }
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 720px) {
 
   .nav-links {
     position: fixed; /* 👈 importante */

@@ -268,7 +268,7 @@ footer{
   transform: scale(1.2);
 }
 /*Responsive*/
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   .info{
     height: 800px;
   }
