@@ -73,3 +73,11 @@
   background-color: #e63946;
   color: white;
 }
+@media (max-width: 720px) {
+  .overlay h1{
+    font-size: 45px;
+  }
+  .overlay p{
+    font-size: 20px;
+  }
+}

@@ -272,8 +272,12 @@ footer{
   .logo{
     font-size: 200px;
   }
+  .TrattoriaRoma{
+   padding: 0 10px;
+  }
   .TrattoriaRoma p{
-    font-size: 15px;
+    font-size: 14px;
+    
    
   }
   .info{
@@ -332,7 +336,22 @@ footer{
   .contenido_alter_txt h1{
     font-size: 42px;
   }
-
+  .about{
+    padding: 50px 15px;
+  }
+.aboutUs{
+  display: grid;
+  padding: 0 20px;
+}
+.aboutUs p{
+  font-size: 14px;
+}
+.aboutUs h1{
+  font-size: 55px;
+}
+.ubicacion_info{
+  padding: 0 20px;
+}
 }
   
 
