@@ -21,7 +21,7 @@
   transition: background 0.4s ease; 
 }
 .HeaderNav.scrolled {
-  background: #111; 
+  background: #121212; 
 }
 /* Flex principal */
 .HeaderNav .container {
@@ -97,16 +97,18 @@ body.menu-open {
 
 
   .nav-links {
+    display: flex;
     position: fixed; 
     top: 0;
     right: 0;
     height: 100vh; 
     width: 65%; 
-    background: #111;
+    padding-left: 15px;
+    background: #121212;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 40px;
 
     /* Estado cerrado */
     transform: translateX(100%);
@@ -116,6 +118,10 @@ body.menu-open {
                 opacity 0.3s ease;
 
     box-shadow: -10px 0 30px rgba(0,0,0,0.4);
+  }
+  .nav-links a{
+    font-size: 22px;
+    font-family: playfair display, serif;
   }
 
   .nav-links.active {
